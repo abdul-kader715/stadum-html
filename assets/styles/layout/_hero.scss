@@ -123,6 +123,7 @@
             font-weight: 400;
             letter-spacing: 0.36px;
             max-width: 750px;
+            display: block;
 
             @media (max-width:575px) {
                font-size: 16px;
@@ -256,8 +257,8 @@
 
    .heroVideo {
       position: absolute;
-      right: 20%;
-      top: 46%;
+      right: 21%;
+      top: 45%;
       z-index: 111;
 
       @media (max-width:1399px) {

@@ -232,7 +232,7 @@
 
 
    .about-content {
-      max-width: 686px;
+      max-width: 703px;
       margin-left: 70px;
 
       @media (max-width:1399px) {
@@ -308,7 +308,6 @@
             font-size: 18px;
             font-weight: 600;
             line-height: 32px;
-            letter-spacing: 0.36px;
             list-style: none;
             display: block;
 
@@ -322,7 +321,7 @@
             }
 
             span {
-               margin-left: 16px;
+               padding-left: 10px;
             }
          }
       }
@@ -1061,7 +1060,9 @@
          }
       }
    }
-
+.swiper-3d .swiper-slide-shadow {
+  background: transparent; 
+}
 }
 
 .testimonil-card {
