@@ -1,0 +1,117 @@
+/* 1.1	Theme Reset Style */
+html {
+   font-size: $base-font-size + px;
+}
+
+:root {
+   scroll-behavior: unset;
+}
+
+body {
+   font-family: $body-font;
+   background-color: $body-bg-color;
+   font-size: 15px;
+   overflow-x: hidden;
+
+}
+
+p {
+   font-size: 16px;
+   color: $body-color;
+   line-height: 1.8em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   color: $heading-color;
+   font-family: $heading-font;
+   font-weight: 700;
+}
+
+ul {
+   padding-left: 0;
+   margin: 0;
+   list-style: none;
+}
+
+a {
+   text-decoration: none;
+}
+
+a:hover {
+   text-decoration: none;
+}
+
+img {
+   max-width: 100%;
+}
+
+
+.sr-only {
+   display: none !important;
+   opacity: 0;
+   visibility: hidden;
+}
+
+/* 1.2 Global Elements */
+.main_page_wrapper {
+   position: relative;
+   overflow: hidden;
+}
+
+.wow {
+   visibility: hidden;
+}
+
+@media (min-width: 1400px) {
+   .container {
+      max-width: 1620px !important;
+   }
+}
+
+.section_space {
+   padding: 120px 0;
+
+   @media (max-width:991px) {
+      padding: 90px 0;
+   }
+
+   @media (max-width: 767px) {
+      padding: 80px 0;
+   }
+}
+
+
+
+@-webkit-keyframes rotating {
+   from {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+   }
+
+   to {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+   }
+}
+
+@keyframes rotating {
+   from {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+   }
+
+   to {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+   }
+}
+
+.rotating {
+   -webkit-animation: rotating 5s alternate infinite;
+   animation: rotating 5s alternate infinite;
+}

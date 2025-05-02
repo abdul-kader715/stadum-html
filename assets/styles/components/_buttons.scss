@@ -1,0 +1,231 @@
+.btn_primary {
+   display: inline;
+   position: relative;
+   color: $template-color;
+   padding: 15px 32px;
+   text-align: center;
+   font-family: $body-font;
+   text-transform: capitalize;
+   border: 1px solid $template-color;
+   font-size: 18px;
+   font-weight: 500;
+   z-index: 1;
+   color: $white;
+   transition: all .3s ease-in-out;
+
+   .arrow {
+      display: inline;
+      margin-left: 8px;
+      top: -2px;
+      position: relative;
+      transition: all .3s ease-in-out;
+
+      svg {
+         stroke: $white;
+         transition: all .3s ease-in-out;
+      }
+   }
+
+   &::before {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 51%;
+      height: 100%;
+      content: '';
+      background: $template-color;
+      z-index: -1;
+      transition: all .3s ease-in-out;
+   }
+
+   &::after {
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 50%;
+      height: 100%;
+      content: '';
+      background: $template-color;
+      z-index: -1;
+      transition: all .3s ease-in-out;
+   }
+
+   &:hover {
+      color: $heading-color;
+
+      &::before {
+         width: 0;
+      }
+
+      &::after {
+         width: 0;
+      }
+
+      .arrow {
+
+         svg {
+            stroke: #081933;
+         }
+      }
+
+   }
+
+   @media (max-width:991px) {
+      padding: 15px 28px;
+   }
+
+   @media (max-width:767px) {
+      font-size: 15px;
+      line-height: 25px;
+      padding: 10px 25px;
+   }
+}
+
+.btn_secondary {
+   position: relative;
+   z-index: 1;
+   display: inline-block;
+   border-radius: 10px;
+   color: white;
+   font-size: 18px;
+   font-family: $body-font;
+   font-weight: 700;
+   padding: 14px 50px;
+   overflow: hidden;
+   transition: all .5s ease-in-out;
+   text-transform: capitalize;
+
+   &::before {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      content: '';
+      background: linear-gradient(90deg, #E67657 0%, #F1B853 97%);
+      z-index: -1;
+      transition: all .5s ease-in-out;
+   }
+
+   &:hover {
+      color: $white;
+
+      &::before {
+         background: linear-gradient(90deg, #F1B853 0%, #E67657 97%);
+      }
+   }
+}
+
+.tabBtn {
+   display: flex;
+   padding: 10px 24px;
+   justify-content: center;
+   align-items: center;
+   color: $heading-color;
+   font-size: 16px;
+   font-weight: 500;
+   line-height: 28px;
+   border: 1px solid #D3DBE2;
+   background: transparent;
+   transition: all .3s ease-in-out;
+
+   &.active,
+   &:hover {
+      background: $template-color;
+      border: 1px solid transparent;
+      color: $white;
+   }
+}
+
+.video-btn {
+   border: 0;
+   background: transparent;
+   z-index: 1;
+
+   .icon {
+      width: 94px;
+      height: 94px;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: $template-color;
+      border-radius: 94px;
+      position: relative;
+
+      @media (max-width:991px) {
+         width: 80px;
+         height: 80px;
+      }
+
+      @media (max-width:767px) {
+         width: 70px;
+         height: 70px;
+      }
+
+      &::before {
+         position: absolute;
+         left: 50%;
+         top: 50%;
+         width: 120%;
+         height: 120%;
+         border: 1px solid $white;
+         border-radius: 100%;
+         content: '';
+         transform: translate(-50%, -50%);
+      }
+
+      svg {
+         fill: $white;
+      }
+   }
+}
+
+
+
+
+
+
+
+
+
+#button {
+   display: inline-block;
+   background-color: $template-color;
+   width: 50px;
+   height: 50px;
+   text-align: center;
+   border-radius: 100px;
+   position: fixed;
+   bottom: 30px;
+   right: 30px;
+   transition: background-color .3s,
+      opacity .5s, visibility .5s;
+   opacity: 0;
+   visibility: hidden;
+   z-index: 1000;
+}
+
+#button::after {
+   content: "\e627";
+   font-family: themify;
+   font-weight: normal;
+   font-style: normal;
+   font-size: 15px;
+   line-height: 50px;
+   color: #fff;
+}
+
+#button:hover {
+   cursor: pointer;
+   background-color: $template-color-s2;
+}
+
+#button:active {
+   background-color: #555;
+}
+
+#button.show {
+   opacity: 1;
+   visibility: visible;
+}

@@ -1,0 +1,69 @@
+/*
+    @version         : 1.0.0
+    @Template Name   : Stadum - Html Template
+    @Template author : Stadum
+*/
+
+/*--------------------------------------------------------------
+css table of contents
+----------------------------------------------------------------
+
+1. General
+	1.1 Theme Reset Style
+	1.2 Global Elements
+
+2. header
+
+3. sections
+	3.1 hero_slider
+	3.2 countdown_section
+	3.3 about_section
+	3.4 categorie-section 
+	3.5 courses_section
+	3.6 choose_section
+	3.7 testimonil_section
+	3.8 team_section
+	3.9 partnerst_section
+	3.10 community_section 
+	3.11 mentorship_section
+	3.12 cta-section
+   3.13 blog-section
+   3.14 textSlider-Section
+
+4. footer_section
+
+
+
+
+----------------------------------------------------------------*/
+
+
+/*------------------------------------------------------------------
+1. General
+----------------------------------------------------------------*/
+
+// helpers
+@import "helpers/variables";
+
+// base
+@import "base/basic";
+
+
+// components
+@import "components/top-title";
+@import "components/buttons";
+@import "components/form";
+@import "components/social-links";
+@import "components/animation";
+
+// layout
+@import "layout/header";
+@import "layout/hero";
+@import "layout/footer";
+
+// components
+@import "components/sticky-header";
+
+
+// page
+@import "page/home-main";
