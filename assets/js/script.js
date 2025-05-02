@@ -78,14 +78,7 @@
    });
 
 
-
-
-
-
-
-
    // tab js 
-
    document.addEventListener('DOMContentLoaded', function () {
       const tabBtns = document.querySelectorAll('.tabBtn');
       tabBtns.forEach(button => {
@@ -114,8 +107,7 @@
    });
 
 
-
-
+   // team_slider
    $(document).ready(function () {
       $('.team_slider').slick({
          infinite: true,
@@ -155,8 +147,17 @@
       });
    });
 
+   // testimonil slider
+   const swiper2 = new Swiper(".Swiper2", {
+      effect: "cards",
+      grabCursor: true,
+      navigation: {
+         nextEl: ".swiper-button-next",
+         prevEl: ".swiper-button-prev",
+      },
+   });
 
-
+   // marquee text slider js
    const swiper = new Swiper('.slider-active', {
       loop: true,
       freeMode: true,
@@ -169,37 +170,6 @@
          disableOnInteraction: true,
       },
    });
-
-
-   const swiper2 = new Swiper(".Swiper2", {
-      effect: "cards",
-      grabCursor: true,
-      navigation: {
-         nextEl: ".swiper-button-next",
-         prevEl: ".swiper-button-prev",
-      },
-   });
-
-
-
-
-   /* top to bottom js */
-   var btn = $('#button');
-
-   $(window).scroll(function () {
-      if ($(window).scrollTop() > 300) {
-         btn.addClass('show');
-      } else {
-         btn.removeClass('show');
-      }
-   });
-
-
-
-
-
-
-
 
    /* WATCH VIDEO */
 
