@@ -156,7 +156,6 @@
       position: absolute;
       left: -20px;
       bottom: 78px;
-      z-index: -11;
    }
 
    .shape2 {
@@ -248,7 +247,7 @@
          }
 
          h2 {
-            margin-bottom: 60px;
+            margin-bottom: 50px;
 
             @media (max-width:1399px) {
                margin-bottom: 20px;
@@ -285,7 +284,7 @@
          font-weight: 500;
          line-height: 32px;
          letter-spacing: 0.36px;
-         margin-bottom: 20px;
+         margin-bottom: 30px;
 
          @media (max-width:1199px) {
             font-size: 16px;
@@ -492,11 +491,13 @@
    z-index: 1;
 
    .top-content {
+      
       margin-bottom: 40px;
    }
 
    .top_title {
       text-align: left;
+      max-width: 496px;
    }
 
    .courses_btn {
@@ -529,11 +530,13 @@
    }
 
    .courses_content {
-      
+
       display: none;
-      &.active{
+
+      &.active {
          display: block;
-         .row{
+
+         .row {
             row-gap: 24px;
          }
       }
@@ -1060,9 +1063,10 @@
          }
       }
    }
-.swiper-3d .swiper-slide-shadow {
-  background: transparent; 
-}
+
+   .swiper-3d .swiper-slide-shadow {
+      background: transparent;
+   }
 }
 
 .testimonil-card {
